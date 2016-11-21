@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="230dp">
+    <TextView
+        android:id="@+id/textView_item_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <SurfaceView
+            android:id="@+id/surfaceView_item_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/networkImageView_item_pic"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ProgressBar
+            android:id="@+id/progressBar_item_progress"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/imageView_item_play"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</LinearLayout>
